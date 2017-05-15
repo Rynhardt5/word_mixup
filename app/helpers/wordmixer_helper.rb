@@ -1,0 +1,2 @@
+module WordmixerHelper
+end

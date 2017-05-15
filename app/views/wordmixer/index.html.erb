@@ -1,0 +1,14 @@
+<%= form_for(:wordmixer, url: index_path) do |f| %> 
+
+<%= f.label :Mix_your_words %>
+<%= f.text_field :word_input, value: params[:wordmixer][:word_input]  %>
+
+<%= f.submit "submit", class: "btn btn-primary" %>
+
+<% end %>
+
+<% unless @result.nil? %>
+       = <%= @result %> 
+<% end %>
+
+
